@@ -1,0 +1,118 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body {
+	background-color: rgb(45, 53, 62);
+
+}
+
+
+.wrapper{
+	margin: auto;
+	min-height: 100vh;
+	width: 90%;	
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	
+}
+
+
+.card{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	background-color: rgb(58, 70, 77);
+	width: 300px;
+	border-radius: 5px;
+	
+}
+
+
+@media (max-width: 1050px) {
+	.wrapper{
+		max-width: none;
+		height: auto;
+		flex-direction: column;
+		justify-content: center; 
+	}	
+
+	.card{
+		margin: 5px auto 5px auto;
+		background-color: rgb(45, 53, 62);	}
+}
+
+.card_header{
+	margin: 10% auto 2% 10%;
+	font-size: 25px;
+	color: white;
+}
+
+.card_body{
+	color:rgb(172, 181, 187);
+	margin: 5% 10% 5% 10%;
+	font-family: 'Zilla Slab', serif;
+
+}
+
+.card_text li:first-child{
+	width: auto;
+	height: auto;
+	margin-bottom: 20px;
+
+}
+.card_footer{
+	display: flex;
+	justify-content: center;
+}
+
+.card_footer h3{
+	margin: auto;
+	color: white;
+}
+
+.card_button{
+	display: flex;
+	justify-content: center;
+	font-family: 'Manjari', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	width: 250px;
+	height: 40px;
+	background: linear-gradient(to right, rgba(254, 113, 58, 0.6), rgba(178, 41, 242, 0.6));
+	border-radius: 25px;
+	margin-top: 3%;
+	margin-bottom: 10%;
+	
+}
+
